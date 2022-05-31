@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Perfil</title>
+
+</head>
+<body>
+
+<section class="container">
+
+        <div class="card tarjeta" id="FirstCard" >
+         <div id="imagenFondo"><img  src="img/tecnologia.jpg" alt="Card image cap"></div>
+         <div  id="info" style="padding: 16px;">
+                      <div class="row" id="info-img">
+                        <img class="imagenPerfil" src="img/primera.png" alt="Foto perfil" id="imagenPerfil">
+                          <div  class="btn-edit"  onclick="cambiar_imagen()" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                      </div>
+
+                      <div id="info-data">
+                        <div>
+                         <h1>Lu Duarte</h1>
+                         <div id="info-company">Estudiante UNLAM</div>
+
+                         <div id="Info-contact">
+                         <span class="card-text">Buenos Aires(Argentina).</span>
+                         <span><a href="#">Informacion de contacto</a></span>
+                        </div>
+                      </div>
+                 
+                <ul id="info-details">
+                  <li><a href="https://www.unlam.edu.ar/">
+                      <img src="img/LogoUnlam.jpg" alt="logoUnLam">
+                      <h2>Universidad Nacional de la Matanza</h2>
+                  </a></li>
+
+                  <li><a href="https://ingenieria.unlam.edu.ar/">
+                    <img src="img/diit.jpg" alt="logoUnLamIngenieria">
+                    <h2>Departamento de Ingenieria UnLam</h2>
+                </a></li>
+                </ul>
+                      </div>
+                       <div id="info-actions">
+                       <button type="button" class="btn btn-primary">Tengo interes</button>
+                       <button type="button" class="btn btn-light">Añadir seccion</button>
+                       <button type="button" class="btn btn-light">mas</button>
+                       </div>
+                       
+                </div>
+           </div>
+<!--------------------->
+<!--Seccion acerca de-->
+
+        <div class="card tarjeta" >
+                <div class="card-titles"><h2>Acerca de </h2>
+             
+                   <div class="btn-edit btn-right"  onclick="cambiar_parrafo()"><a><i class="fa fa-pencil" ></i></a></div>
+
+                      <div>
+                        <p  id="text-acercade">
+                        Tecnicatura en Desarrollo Web en la Universidad Nacional de La Matanza.
+                        Pastelera aficionada.Pintora en mis ratos libres.</p>
+                      </div>
+                      <div>
+                        <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+                      </div> 
+                </div>    
+        </div>
+
+<!---------------------------->
+<!------seccion experiencias-->
+
+<div class="card tarjeta" >
+
+  <div class="row">
+       <div class="card-titles col-sm-10" ><h2>Experiencias</h2></div>
+       <div class=" btn-edit col-sm-2 d-flex justify-content-end"><a ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+   </div>  
+
+      <div>
+         <ul class="items-list">
+           <li>
+             <div class="row separar ">
+                 <div class="col-sm-10">
+                  <div class="box">
+                    <a href="#">
+                       <div class="logo-image-container">
+                          <img src="img/anlis.png"alt="LogoAnlis">
+                          </div>
+                          </a>
+                       <div class="list-info ">
+                         <h3>Anlis-Malbran</h3>
+                         <p>Implementación base de datos de personal <span>-Jornada párcial</span></p>
+                       </div>
+             </div>
+           </div>
+             <div class="col-sm-2 d-flex justify-content-end align-items-center">
+              
+               <div class=" btn-edit-chiquito btn-right" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+               <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad1()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+               
+         </div>
+             </div>
+         </li>
+
+         <li>
+             <div class="row separar">
+                 <div class="col-sm-10" >
+                  <div class="box">
+                    <a href="#">
+                       <div class="logo-image-container">
+                          <img src="img/LaSalle.png"alt="LogoAnlis">
+                          </div>
+                          </a>
+                       <div class="list-info ">
+                         <h3>Profesora suplente de computación</h3>
+                         <span>Nivel primario</span>
+                         <p>Gonzalez Catan <span>-Jornada párcial</span></p>
+                        
+                       </div>
+                 </div>
+                 </div>
+
+                 <div class="col-sm-2 d-flex justify-content-end align-items-center">
+                  
+                   <div class=" btn-edit-chiquito btn-right" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                   <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad2()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+               </div>
+             </div>
+         </li>    
+       </ul>      
+       </div>
+   </div>         
+         
+</div>   
+</div>
+<!------------------------->
+<!--Seccion proyectos------> 
+
+        <div class="card tarjeta" >
+
+               <div class="row">
+                    <div class="card-titles col-sm-10" ><h2>Proyectos</h2></div>
+                    <div class=" btn-edit col-sm-2 d-flex justify-content-end"><a ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                </div>  
+      
+                   <div>
+                      <ul class="items-list">
+                        <li>
+                          <div class="row separar ">
+                              <div class="col-sm-10">
+                                <div class="box">
+                                  <a href="https://github.com/sebix7/organico">
+                                    <div class="logo-image-container">
+                                        <img src="img/organico.jpg"alt="Logo organico">
+                                        </div>
+                                        </a>
+                                    <div class="list-info ">
+                                      <h4>Vida Sana</h4><span>Venta de frutas y verduras organicas</span>
+                                      <p> Sitio web<span>-Tecnologias utilizadas:JavaServer Pages (JSP),ajax,spring framework,
+                                        hibernate,mysql.
+                                      </span></p>
+                                    </div>
+                              
+                          </div>
+                        </div>
+                          <div class="col-sm-2 d-flex justify-content-end align-items-center">
+                           
+                            <div class=" btn-edit-chiquito btn-right" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                            <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad1()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                            
+                      </div>
+                          </div>
+                      </li>
+
+                      <li>
+                          <div class="row separar">
+                              <div class="col-sm-10" >
+                                <div class="box">
+                                  <a href="https://github.com/EstherAlifraco/AyudandoEnPandemia">
+                                    <div class="logo-image-container">
+                                        <img src="img/ayudando.jpg"alt="Logo organico">
+                                        </div>
+                                  </a>
+                                      <div >
+                                      <h4>Ayudando en pandemia</h4>
+                                      <h6>Conectamos personas que necesitan ayuda con personas que desean ayudar</h6>
+                                      <p> Sitio web<span>-Tecnologías utilizadas:.NET framework,sql server,Entity framework,razor,ajax,API rest.
+                                      </span></p>
+                                    </div>
+                                    
+                                
+                                </div>
+                              </div>
+                              <div class="col-sm-2 d-flex justify-content-end align-items-center">
+                               
+                                <div class=" btn-edit-chiquito btn-right" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                                <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad2()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                            </div>
+                          </div>
+                      </li>    
+                    </ul>      
+                    </div>
+                </div>         
+                      
+          </div>   
+          </div>
+                  
+<!------------------------->
+<!--Seccion skilss------> 
+        <div class="card tarjeta" >
+          <div >
+                      <div class="row">
+                        <div class="card-titles col-sm-10" ><h2>Hard skills & soft skills</h2></div>
+                        <div class=" btn-edit col-sm-2 d-flex justify-content-end"><a ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                    </div> 
+
+                           <div class="row separar " id="habilidades1">
+                        <div class="col-sm-10">
+                          <div class="progress" style="height:30px ;">
+                            <div id="prop1" class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ><span id="nombre1">HTML</span></div>
+                          </div>
+                        </div>
+                          <div class="col-sm-2 ">
+                            <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad1()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                            <div class=" btn-edit-chiquito btn-right" onclick="editarHabilidad()" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+  
+                            
+                      </div>
+                           </div>
+
+                           <div class="row separar" id="habilidades2">
+                              <div class="col-sm-10" >
+                                <div class="progress" style="height:30px ;">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                                </div>
+                              </div>
+                              <div class="col-sm-2 ">
+                                <div class=" btn-edit-chiquito btn-right " onclick="Eliminar_habilidad2()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                                <div class=" btn-edit-chiquito btn-right" ><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                            </div>
+                           </div>
+
+                           <div class="row separar" id="habilidades3">
+                            <div class="col-sm-10">
+                              <div class="progress" style="height:30px ;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                              </div>
+                            </div>
+                              <div class="col-sm-2">
+                                <div class=" btn-edit-chiquito btn-right" onclick="Eliminar_habilidad3()"><a ><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+                                <div class=" btn-edit-chiquito btn-right"><a ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+                               
+                          </div>
+                           </div>
+                      </div>
+          </div>   
+          </div>
+                  
+
+        <!--Footer-->
+        <div class="card tarjeta footer  pt-4 pb-4 ">
+         <p>Todos los derechos reservados  <i class="fa fa-registered" aria-hidden="true"></i>
+         </p>
+       
+        </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="scripts.js"></script>
+</body>
+</html>
